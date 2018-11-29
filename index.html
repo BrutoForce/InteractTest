@@ -45,12 +45,21 @@
             -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
             transition: background-color 0.3s;
+
+            -ms-touch-action: none;
+            touch-action: none;
         }
 
             .drag-drop.can-drop {
                 color: #000;
                 background-color: #4e4;
             }
+
+        .dragging-container,
+        .dragging-container * {
+            -ms-touch-action: none;
+            touch-action: none;
+        }
     </style>
 </head>
 <body>
